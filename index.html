@@ -15,7 +15,10 @@
     'https://www.google-analytics.com/analytics.js',
     'ga'
   );
+
+  
   ga('create', 'UA-12345-6', 'auto');
+  ga('create', 'UA-12345-6', 'auto', 'externo');
   ga('send', 'pageview');
  
   </script>
@@ -69,10 +72,10 @@
         </ul>
       </li>
       <li class="menu-lista-item">
-        <a href="http://www.dp6.com.br/contato/" target="_blank" class="menu-lista-link menu-lista-contato" onclick="sendEvent('menu', 'entre_em_contato', 'link_externo', null)">Entre em Contato</a>
+        <a href="http://www.dp6.com.br/contato/" target="_blank" class="menu-lista-link menu-lista-contato" onclick="sendEvent('externo', 'menu', 'entre_em_contato', 'link_externo', null)">Entre em Contato</a>
       </li>
       <li class="menu-lista-item">
-        <a href="http://autos.dp6.com.br/autos_revista_vfinal.pdf" class="menu-lista-link menu-lista-download" target="_pdf" onclick="sendEvent('menu', 'download_pdf', 'download_pdf', null)">Download PDF</a>
+        <a href="http://autos.dp6.com.br/autos_revista_vfinal.pdf" class="menu-lista-link menu-lista-download" target="_pdf" onclick="sendEvent('externo', 'menu', 'download_pdf', 'download_pdf', null)">Download PDF</a>
       </li>
     </ul>
     <div class="menu-rodape">
